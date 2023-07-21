@@ -1,0 +1,13 @@
+.toggleBtn{
+    display: flex;
+    align-items: center;
+    svg{
+        fill: #000;
+        width: 1.5rem;
+    }
+    &:hover{
+        circle{
+            margin-right: .1rem;
+        }
+    }
+}

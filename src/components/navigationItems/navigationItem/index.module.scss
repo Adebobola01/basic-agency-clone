@@ -1,0 +1,10 @@
+.navItem{
+    font-size: .8rem;
+    font-weight: 800;
+    font-family: "SctoGroteskA",sans-serif;
+    margin: 0;
+
+    &:not(:first-of-type){
+        margin-left: 3rem;
+    }
+}
