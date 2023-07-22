@@ -36,9 +36,46 @@
         a{
             color: #fff;
         }
+
+        &:not(:first-of-type){
+            margin-top: 3rem;
+        }
     }
 
     &_col{
-        
+        // width: 50%;
+        h6{
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-bottom: 1rem;
+
+            &::before{
+                width: .8rem;
+                height: .8rem;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-right: .5rem;
+                content: "";
+            }
+
+        }
+
+        form{
+            input{
+                background-color: transparent;
+                outline: none;
+                border: none;
+                width: 20rem;
+                line-height: 3rem;
+                border-bottom: 1px solid #fff;
+
+                &::placeholder{
+                    color: #fff;
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 }
