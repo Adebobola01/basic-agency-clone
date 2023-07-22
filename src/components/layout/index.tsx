@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./layout.module.scss";
 import Navbar from "../navbar";
 import Hero from "../hero";
+import Footer from "../footer";
 
 
 const Layout = ()=>{
@@ -12,6 +13,7 @@ const Layout = ()=>{
             <main>
                 <Hero/>
             </main>
+            <Footer/>
         </>
     )
 }
