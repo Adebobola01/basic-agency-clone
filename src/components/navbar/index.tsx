@@ -8,7 +8,7 @@ const Navbar = ()=>{
 
     return(
         <header className={styles.header} >
-            <Logo />
+            <Logo fillSvg="#fff" />
             <NavigationItems/>
             <ToggleBtn/>
         </header>
