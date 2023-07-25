@@ -3,7 +3,7 @@ import styles from "./layout.module.scss";
 import Navbar from "../navbar";
 import Hero from "../hero";
 import Footer from "../footer";
-
+import Intro from "../intro";
 
 const Layout = ()=>{
 
@@ -12,6 +12,7 @@ const Layout = ()=>{
             <Navbar/>
             <main>
                 <Hero/>
+                <Intro/>
             </main>
             <Footer/>
         </>
