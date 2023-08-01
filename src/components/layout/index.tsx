@@ -4,6 +4,7 @@ import Navbar from "../navbar";
 import Hero from "../hero";
 import Footer from "../footer";
 import Intro from "../intro";
+import Overview from "../overview";
 
 const Layout = ()=>{
 
@@ -13,6 +14,7 @@ const Layout = ()=>{
             <main>
                 <Hero/>
                 <Intro/>
+                <Overview/>
             </main>
             <Footer/>
         </>

@@ -14,4 +14,10 @@ const ToggleBtn = ()=>{
     )
 }
 
-export {ToggleBtn};
+const TransparentBtn = (props: {text: string})=>{
+    return(
+        <button className={styles.transpBtn} >{props.text}</button>
+    )
+}
+
+export {ToggleBtn, TransparentBtn};
