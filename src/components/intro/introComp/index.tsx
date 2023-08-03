@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./index.module.scss";
 
+type introType = {
+    text: string,
+    svg: any
+}
 
-const IntroComp = (props: any)=>{
-
+const IntroComp = (props: introType)=>{
 
     return (
         <div className={styles.introComp} >

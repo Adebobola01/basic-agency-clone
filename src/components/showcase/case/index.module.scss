@@ -1,0 +1,47 @@
+.case{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    picture{
+        padding: .6rem;
+        background-color: red;
+        position: relative;
+        img{
+            position: sticky;
+            top: -.6rem;
+            height: 30rem;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    &_details{
+        margin-top: 1.6rem;
+        text-transform: uppercase;
+        font-family: "SctoGroteskA", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        height: 10rem;
+        h2{
+            margin: 0 0 .6rem;
+
+        }
+
+        p{
+            margin: 0;
+            width: 12rem;
+        }
+    }
+
+    &:hover{
+        h2{
+            text-decoration: underline;
+        }
+
+        img{
+            transform: scale(.95);
+        }
+    }
+}
