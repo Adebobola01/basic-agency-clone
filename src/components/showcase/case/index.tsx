@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./index.module.scss";
+import VideoPlayer from "../../videoPlayer";
 
 type caseType = {
     title: string,
     text: string,
     image: any
+    video: any
 }
 
 
@@ -13,11 +15,16 @@ const Case = (props: caseType)=> {
 
     return(
         <div className={styles.case} >
-            <picture>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900"></svg>
-                {/* <img src={props.image} alt={props.title} /> */}
-            </picture>
-            <span className={styles.case_details} >
+                {
+                    props.video ? 
+                    <figure>
+                        <VideoPlayer video={props.video} mute={true} /> 
+                    </figure> :
+                    <div>
+                        <img src={props.image} alt={props.title} />
+                    </div>
+                }
+            <span className={`${styles.case_details} ${props.video ? styles.case_details_video : ""} `} >
                 <h2>{props.title}</h2>
                 <p>{props.text}</p>
             </span>

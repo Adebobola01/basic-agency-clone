@@ -1,19 +1,34 @@
 .case{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    align-items: flex-start;
     cursor: pointer;
+    width: 30rem;
+    height: 40rem;
 
-    picture{
-        padding: .6rem;
-        background-color: red;
+    div{
+        transform: scale(1.05); 
+        margin: 0;
+        overflow-y: hidden;
+        height: 30rem;
+        width: 100%;
+        display: flex;
         position: relative;
+
         img{
-            position: sticky;
-            top: -.6rem;
-            height: 30rem;
+            position: absolute;
+            // top: -.6rem;
+            height: 100%;
             width: 100%;
-            object-fit: cover;
+            // object-fit: contain;
+            // object-position: center;
         }
+    }
+ 
+    figure{
+        margin: 0;
+        height: 31.5rem;
     }
 
 
@@ -23,7 +38,11 @@
         font-family: "SctoGroteskA", sans-serif;
         font-size: 14px;
         font-weight: 400;
-        height: 10rem;
+
+       &_video{
+        margin-top: 0;
+       }
+        // height: 10rem;
         h2{
             margin: 0 0 .6rem;
 
@@ -40,8 +59,8 @@
             text-decoration: underline;
         }
 
-        img{
-            transform: scale(.95);
+        div{
+            // transform: scaleX(1);
         }
     }
 }
