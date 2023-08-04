@@ -6,6 +6,7 @@ import Footer from "../footer";
 import Intro from "../intro";
 import Overview from "../overview";
 import ShowCase from "../showcase";
+import Featured from "../featured";
 
 const Layout = ()=>{
 
@@ -17,6 +18,7 @@ const Layout = ()=>{
                 <Intro/>
                 <Overview/>
                 <ShowCase/>
+                <Featured/>
             </main>
             <Footer/>
         </>
