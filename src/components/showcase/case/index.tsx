@@ -5,8 +5,8 @@ import VideoPlayer from "../../videoPlayer";
 type caseType = {
     title: string,
     text: string,
-    image: any
-    video: any
+    image?: any
+    video?: any
 }
 
 
