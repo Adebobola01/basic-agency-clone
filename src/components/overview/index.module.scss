@@ -1,6 +1,10 @@
 .overview{
     padding: 0 5rem 5rem;
 
+    & > figure{
+        margin: 0 0 5rem !important;
+    }
+
     &_container{
         display: flex;
 

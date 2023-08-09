@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./index.module.scss";
 import { TransparentBtn } from "../buttons";
+import Underline from "../underline";
 
 const Overview = ()=>{
 
     return(
         <section className={styles.overview}  >
-            <figure className={styles.overview_underline} >
-            </figure>
+            <Underline/>
             <div className={styles.overview_container}>
                 <p>
                     BASIC/DEPT® is a global branding and digital design agency building products, services, and eCommerce experiences that turn cultural values into company value.

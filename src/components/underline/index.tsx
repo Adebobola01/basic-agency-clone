@@ -6,7 +6,7 @@ const Underline = ()=>{
         height: ".08rem",
         width: "100%",
         backgroundColor: "#000",
-        margin: "0 0 5rem",
+        margin: "0"
     }
 
     return(
