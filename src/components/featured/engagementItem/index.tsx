@@ -16,7 +16,7 @@ const EngagamentItem = ({imageLink, title, text}: itemType)=>{
             <img src={imageLink} alt={`${title} logo`} />
 
             <p>
-                <h2>{title}</h2>
+                <h4>{title}</h4>
 
                 {text}
             </p>

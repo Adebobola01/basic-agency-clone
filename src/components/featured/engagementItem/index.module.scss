@@ -2,10 +2,32 @@
     // width: 40rem;
     margin-right: 1rem;
     img{
-        height: 2rem;
+        height: 3rem;
     }
 
     p{
-        width: 19.5rem;
+        width: 19rem;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.6rem;
+        position: relative;
+        margin: 8rem 0 6rem;
+
+    }
+
+    h4{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+        &::before{
+            width: 1.5rem;
+            height: 2px;
+            background-color: black;
+            content: "";
+            margin-bottom: 2rem;
+            position: absolute;
+            top: -7rem;
+            left: 0;
+        }
     }
 }
