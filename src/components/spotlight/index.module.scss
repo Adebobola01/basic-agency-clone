@@ -1,0 +1,12 @@
+.spotlight{
+    padding: 0 5rem;
+    display: flex;
+    gap: 1rem;
+
+    &_texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+}
