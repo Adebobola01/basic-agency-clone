@@ -8,10 +8,16 @@ const Spotlight = ()=>{
         <section className={styles.spotlight} >
             <div className={styles.spotlight_texts} >
                 <h2>BASIC/DEPT® HELPS BRANDS ● CONNECT W/ CULTURE</h2>
-                <p>ADWEEK  <span> AGENCY SPOTLIGHT</span></p>
+                <p>ADWEEK 
+                    {/* <!--   --> */}
+                    <span> AGENCY SPOTLIGHT</span>
+                </p>
+                <br/>
                 <TransparentBtn text="ABOUT US" />
             </div>
-            <VideoPlayer video={spotVid} mute={true} />
+            <figure className={styles.spotlight_video} > 
+                <VideoPlayer video={spotVid} mute={true} />
+            </figure>
         </section>
     )
 }

@@ -4,9 +4,39 @@
     gap: 1rem;
 
     &_texts{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-grow: 1;
+        color: #f9CDCD;
+        width: 50%;
+
+        h2{
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -.05em;
+            margin: 0;
+        }
+
+        p{
+            background-color: #f9CDCD;
+            color: #000;
+            width: auto;
+            display: inline-block;
+            margin-bottom: 1rem;
+            // margin: 2rem;
+            
+            span{
+                font-size: 14px;
+                margin-left: .1rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+        }
+        br{
+        }
+    }
+    
+    &_video{
+        width: 50%;
+        width: 50%;
+        margin: 0;
     }
 }
