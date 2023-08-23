@@ -15,9 +15,9 @@ const Spotlight = ()=>{
                 <br/>
                 <TransparentBtn text="ABOUT US" />
             </div>
-            <figure className={styles.spotlight_video} > 
+            {/* <figure className={styles.spotlight_video} > 
                 <VideoPlayer video={spotVid} mute={true} />
-            </figure>
+            </figure> */}
         </section>
     )
 }
