@@ -14,9 +14,13 @@ const ToggleBtn = ()=>{
     )
 }
 
-const TransparentBtn = (props: {text: string})=>{
+const TransparentBtn = (props: {text: string, color: string})=>{
+    const style = {
+        color: props.color,
+        border: `1px solid ${props.color}`
+    }
     return(
-        <button className={styles.transpBtn} >{props.text}</button>
+        <button className={styles.transpBtn}  style={style} >{props.text}</button>
     )
 }
 
