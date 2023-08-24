@@ -5,17 +5,20 @@ import heroGif from "../../assets/images/c6fb986a862cbe643c40cbdd0318ebc495efb18
 import styles from "./index.module.scss";
 import VideoPlayer from "../videoPlayer";
 const Hero = ()=>{
-    const [hero, setHero] = useState(false);
+    const [hero, setHero] = useState(true);
 
     const heroHandler = ()=>{
         setHero(!hero);
         console.log(hero)
     }
 
+    let content;
 
-    let content = (hero ? <VideoPlayer mute={false} video={heroVid}/>
-        : <VideoPlayer video={heroGif} mute={true} />)
-
+    if(hero){
+        content = <VideoPlayer mute={false} video={heroVid} loop={false} />
+    }else{
+       content = <VideoPlayer video={heroGif} mute={true} />
+    }
 
     return (
         <section className={styles.hero} >

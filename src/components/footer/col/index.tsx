@@ -9,7 +9,7 @@ type colType = {
 }
 
 const Col = (props:colType)=>{
-    const linkContent = props.links.map(it => <li>{it}</li>)
+    const linkContent = props.links.map((it, idx) => <li key={idx} >{it}</li>)
 
     return(
         <div className={styles.col} >
