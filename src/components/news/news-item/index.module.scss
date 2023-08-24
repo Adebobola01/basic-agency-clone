@@ -1,7 +1,8 @@
 .newsItem{
-    margin: 1rem 0 3rem;
+    padding: 1rem 0 3rem;
     display: flex;
     gap: 1rem;
+    border-top: 1px solid #000;
 
     &:hover{
         h2{
