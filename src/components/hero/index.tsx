@@ -6,24 +6,22 @@ import styles from "./index.module.scss";
 import VideoPlayer from "../videoPlayer";
 const Hero = ()=>{
     const [hero, setHero] = useState(true);
-
+    const [muteVid, setmuteVid] = useState(true)
     const heroHandler = ()=>{
         setHero(!hero);
-        console.log(hero)
+        setTimeout(()=>{
+            // console.log("")
+            setmuteVid(false);
+            console.log("video unmuted", muteVid)
+        }, 1)
     }
 
-    let content;
-
-    if(hero){
-        content = <VideoPlayer mute={false} video={heroVid} loop={false} />
-    }else{
-       content = <VideoPlayer video={heroGif} mute={true} />
-    }
 
     return (
         <section className={styles.hero} >
             <div className={styles.cover} onClick={heroHandler} ></div>
-            {content}
+            <VideoPlayer mute={muteVid} video={heroVid} loop={false} show={!hero} />
+            <VideoPlayer video={heroGif} mute={true} show={hero} loop={true} />
         </section>
     )
 }
