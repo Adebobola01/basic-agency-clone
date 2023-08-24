@@ -18,7 +18,7 @@ const Case = (props: caseType)=> {
                 {
                     props.video ? 
                     <figure>
-                        <VideoPlayer video={props.video} mute={true} show={true} /> 
+                        <VideoPlayer video={props.video} mute={true} show={true} loop={true} /> 
                     </figure> :
                     <div>
                         <img src={props.image} alt={props.title} />

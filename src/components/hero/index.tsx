@@ -10,9 +10,7 @@ const Hero = ()=>{
     const heroHandler = ()=>{
         setHero(!hero);
         setTimeout(()=>{
-            // console.log("")
             setmuteVid(false);
-            console.log("video unmuted", muteVid)
         }, 1)
     }
 
