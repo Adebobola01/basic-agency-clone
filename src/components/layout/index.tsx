@@ -8,6 +8,7 @@ import Overview from "../overview";
 import ShowCase from "../showcase";
 import Featured from "../featured";
 import Spotlight from "../spotlight";
+import News from "../news";
 
 const Layout = ()=>{
 
@@ -21,6 +22,7 @@ const Layout = ()=>{
                 <ShowCase/>
                 <Featured/>
                 <Spotlight/>
+                <News/>
             </main>
             <Footer/>
         </>

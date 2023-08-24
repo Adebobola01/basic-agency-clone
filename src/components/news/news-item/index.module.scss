@@ -1,0 +1,48 @@
+.newsItem{
+    margin: 1rem 0 3rem;
+    display: flex;
+    gap: 1rem;
+
+    &:hover{
+        h2{
+            text-decoration: underline;
+        }
+        img{
+            // scale: .9;
+        }
+    }
+
+    img{
+        min-width: 24rem;
+        // width: 24rem;
+        height: 17rem;
+    }
+
+    &_body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        &_texts{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            h2{
+                font-size: 2.6rem;
+                margin: 0;
+                width: 75%;
+                text-transform: uppercase;
+                
+                word-spacing: -6px;
+                line-height: 1.1;
+            }
+
+            svg{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
