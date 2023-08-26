@@ -1,7 +1,7 @@
 .hero{
     width: 100;
     position: relative;
-
+    cursor: none;
     video{
         width: 100%;
         object-fit: contain;
@@ -14,5 +14,44 @@
     height: 100%;
     z-index: 50;
     background-color: transparent;
-    cursor: pointer;
+    // cursor: pointer;
+}
+
+.cursor{
+    position: absolute;
+    z-index: 51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .08s ;
+    &_top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        text-transform: uppercase;
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+
+        p{
+            margin: 0;
+            text-align: center;
+            font-weight: 700;
+            font-size: .8rem;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    &_down{
+        color: #fff;
+        text-align: center;
+        margin-top: .5rem;
+        font-size: .8rem;
+        font-weight: 700;
+        p{
+            margin: 0;
+        }
+    }
 }
