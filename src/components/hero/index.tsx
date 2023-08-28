@@ -27,12 +27,6 @@ const Hero = ()=>{
         }, 1)
     }
 
-
-    useEffect(()=>{
-        cursorStyleHandler({clientX, clientY});
-        // return cursorStyleHandler({clientX: 600, clientY: 370});
-    }, [clientX, clientY])
-
     const moveMouse = ({clientX, clientY}: cursorPtType)=>{
         setCursorX(clientX);
         setCursorY(clientY);
@@ -41,18 +35,19 @@ const Hero = ()=>{
     const cursorStyleHandler = ({clientX, clientY}: cursorPtType)=>{
         setCursorStyle({
             transform: `translate(${clientX}px, ${clientY}px)`,
-            display: playHeroGif ? "flex" : "none"
         });
-        console.log(cursorStyle);
     }
 
-    // console.log(clientX, clientY)
+    useEffect(()=>{
+        cursorStyleHandler({clientX, clientY});
+        // return cursorStyleHandler({clientX: 600, clientY: 370});
+    }, [clientX, clientY])
 
 
     return (
         <section className={styles.hero} onMouseMove={moveMouse} >
 
-            <div className={styles.cursor} style={cursorStyle} >
+            <div className={styles.cursor} style={{...cursorStyle, display: playHeroGif ? "flex" : "none"}} >
                 <div className={styles.cursor_top} >
                     <p>watch <br/> 
                     reel</p>
@@ -63,7 +58,7 @@ const Hero = ()=>{
                 </div>
             </div>
 
-            <div className={styles.cover} onClick={heroHandler} ></div>
+            <div className={styles.cover} onClick={heroHandler}></div>
             <VideoPlayer mute={muteVid} video={heroVid} loop={false} show={!playHeroGif} />
             <VideoPlayer video={heroGif} mute={true} show={playHeroGif} loop={true} />
         </section>
