@@ -7,3 +7,12 @@ body{
     font-family: 'SctoGroteskA', sans-serif;
     background-image: url(./assets/images/noise.png);
 }
+
+:root{
+    --bg-color-sec: #252422;
+    --font-fam: 'SctoGroteskA', sans-serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --padding-sides: 5rem;
+    --color-primary: #f4f4f4;
+}

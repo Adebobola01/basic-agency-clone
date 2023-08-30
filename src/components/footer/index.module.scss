@@ -2,7 +2,7 @@
     background-color: #252422;
     
     &_content{
-        padding: 7.5rem 5rem 0;
+        padding: 7.5rem var(--padding-sides) 0;
         
     }
 
@@ -15,7 +15,7 @@
 
     &_row{
         display: flex;
-        color: #f4f4f4;
+        color: var(--color-primary);
         justify-content: space-between;
         font-size: 2rem;
 
@@ -41,7 +41,7 @@
         }
 
         a{
-            color: #f4f4f4;
+            color: var(--color-primary);
         }
 
         &:not(:first-of-type){
@@ -62,7 +62,7 @@
                 width: .8rem;
                 height: .8rem;
                 border-radius: 50%;
-                background-color: #f4f4f4;
+                background-color: var(--color-primary);
                 margin-right: .5rem;
                 content: "";
             }
@@ -77,10 +77,10 @@
                 border: none;
                 width: 30rem;
                 line-height: 3rem;
-                border-bottom: 1px solid #f4f4f4;
+                border-bottom: 1px solid var(--color-primary);
 
                 &::placeholder{
-                    color: #f4f4f4;
+                    color: var(--color-primary);
                     font-size: 1.2rem;
                 }
             }
