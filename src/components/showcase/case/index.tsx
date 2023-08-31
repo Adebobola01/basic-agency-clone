@@ -17,9 +17,9 @@ const Case = (props: caseType)=> {
         <div className={styles.case} >
                 {
                     props.video ? 
-                    <figure>
+                    <div>
                         <VideoPlayer video={props.video} mute={true} show={true} loop={true} /> 
-                    </figure> :
+                    </div> :
                     <div>
                         <img src={props.image} alt={props.title} />
                     </div>
