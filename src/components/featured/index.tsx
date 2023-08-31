@@ -12,7 +12,7 @@ const Featured = ()=>{
 
     return(
         <section className={styles.featured} >
-            <Underline/>
+            <Underline customStyles={{margin: "0 5rem"}} />
             <div className={styles.featured_num} >
                 <span>00</span>
                 <div>

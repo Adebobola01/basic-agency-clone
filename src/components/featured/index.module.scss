@@ -1,8 +1,8 @@
 .featured{
-    margin: 0 var(--padding-sides);
+    // margin: 0 var(--padding-sides);
     position: relative;
     &_num{
-        margin: 1rem 0 5rem;
+        margin: 1rem var(--padding-sides) 5rem;
         display: flex;
         justify-content: space-between;
 
@@ -24,11 +24,12 @@
         font-size: 2.8rem;
         line-height: 1.1;
         letter-spacing: -.5px;
-        margin: 0 0 3rem;
+        margin: 0 var(--padding-sides) 3rem;
     }
 
     &_engagements{
         display: flex;
+        // justify-content: space-around;
         gap: 6rem;
         overflow-x: scroll;
         margin-top: 7rem;
@@ -41,6 +42,7 @@
 
         &::-webkit-scrollbar-track{
             background-color: rgb(156, 155, 155);
+            margin: 0rem var(--padding-sides);
         }
         &::-webkit-scrollbar-thumb{
             background-color: #000;

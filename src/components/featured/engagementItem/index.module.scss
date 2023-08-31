@@ -1,4 +1,9 @@
 .engagementItem{
+
+    &:first-of-type{
+        margin-left: var(--padding-sides);
+    }
+
     // width: 40rem;
     // margin-right: 1rem;
     img{
