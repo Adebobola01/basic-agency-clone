@@ -15,4 +15,6 @@ body{
     --color-white: #fff;
     --padding-sides: 5rem;
     --color-primary: #f4f4f4;
+    --text-color-primary: rgb(37, 36, 34);
+    --text-color-primary: #f9CDCD;
 }
