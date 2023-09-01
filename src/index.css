@@ -1,3 +1,14 @@
+:root{
+    --bg-color-sec: #252422;
+    --font-fam: 'SctoGroteskA', sans-serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --padding-sides: 5rem;
+    --color-primary: #f4f4f4;
+    --text-color-primary: rgb(37, 36, 34);
+    --text-color-secondary: #f9CDCD;
+}
+
 html,*{
     box-sizing: border-box;
 }
@@ -8,13 +19,3 @@ body{
     background-image: url(./assets/images/noise.png);
 }
 
-:root{
-    --bg-color-sec: #252422;
-    --font-fam: 'SctoGroteskA', sans-serif;
-    --color-black: #000;
-    --color-white: #fff;
-    --padding-sides: 5rem;
-    --color-primary: #f4f4f4;
-    --text-color-primary: rgb(37, 36, 34);
-    --text-color-primary: #f9CDCD;
-}

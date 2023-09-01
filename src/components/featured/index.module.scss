@@ -1,6 +1,8 @@
 .featured{
     // margin: 0 var(--padding-sides);
     position: relative;
+    cursor: none;
+    overflow-y: hidden;
     &_num{
         margin: 1rem var(--padding-sides) 5rem;
         display: flex;
@@ -29,10 +31,10 @@
 
     &_engagements{
         display: flex;
-        // justify-content: space-around;
+        position: relative;
         gap: 6rem;
         overflow-x: scroll;
-        margin-top: 7rem;
+        padding-top: 7rem;
         // left: -5rem;
         
         // &_container{
@@ -51,4 +53,20 @@
             height: .15rem;
         }
     }
+}
+
+.cursor{
+    font-size: 14px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: var(--text-color-secondary);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 52;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .2s;
 }

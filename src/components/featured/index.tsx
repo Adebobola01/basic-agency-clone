@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import styles from "./index.module.scss";
 import Underline from "../underline";
 import EngagamentItem from "./engagementItem";
@@ -8,10 +8,42 @@ import wilsonImage from "../../assets/images/wilson.webp";
 import atImage from "../../assets/images/at&t.webp";
 import patagImage from "../../assets/images/patagonia.webp";
 
+type cursorPtType = {
+    clientX: number, 
+    clientY: number
+}
+
+
 const Featured = ()=>{
 
+    const [clientX, setCursorX] = useState(0)
+    const [clientY, setCursorY] = useState(0)
+    const [cursorStyle, setCursorStyle] = useState({});
+
+
+    //function to set cursor coordinates
+    const moveMouse = ({clientX, clientY}: cursorPtType)=>{
+        setCursorX(clientX - 60);
+        setCursorY(clientY + 244 + 70);
+    }
+ 
+    //function to move cursor to new coordinates
+    const cursorStyleHandler = ({clientX, clientY}: cursorPtType)=>{
+        setCursorStyle({
+            transform: `translate(${clientX}px, ${clientY}px)`,
+        });
+    }
+
+    useEffect(()=>{
+        cursorStyleHandler({clientX, clientY});
+        console.log(clientX, clientY)
+    }, [clientX, clientY]);
+
     return(
-        <section className={styles.featured} >
+        <section className={styles.featured} onMouseMove={moveMouse}>
+            <div className={styles.cursor} style={cursorStyle}  >
+                <span>drag</span>
+            </div>
             <Underline customStyles={{margin: "0 5rem"}} />
             <div className={styles.featured_num} >
                 <span>00</span>
