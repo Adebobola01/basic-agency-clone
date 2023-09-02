@@ -9,3 +9,15 @@
     background-color: transparent;
     z-index: 51;
 }
+
+.menu_btn{
+    display: none;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+@media (max-width: 1279px) {
+    .menu_btn{
+        display: block;
+    }
+}

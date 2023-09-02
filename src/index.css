@@ -19,3 +19,8 @@ body{
     background-image: url(./assets/images/noise.png);
 }
 
+@media (min-width: 1279px) {
+    :root{
+        --padding-sides: 4.5rem;
+    }
+}

@@ -22,3 +22,9 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+@media (max-width: 1279px) {
+    .toggleBtn{
+        display: none;
+    }
+}

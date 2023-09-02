@@ -11,6 +11,7 @@ const Navbar = ()=>{
             <Logo fillSvg="#fff" />
             <NavigationItems/>
             <ToggleBtn/>
+            <p className={styles.menu_btn} >menu</p>
         </header>
     )
 }
