@@ -25,3 +25,46 @@
     }
     
 }
+
+@media only screen and (max-width: 1279px) {
+    .overview{
+        &_container{
+            flex-direction: column;
+
+            p{
+                font-size: 22px;
+                font-weight: 400;
+                // width: 40rem;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .overview{
+        &_container{
+            figure{
+                width: 50vw;
+                height: 17vw;
+            }
+
+            p{
+                // width: 40rem;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .overview{
+        &_container{
+
+            p{
+                // width: 40rem;
+                width: 100%;
+            }
+        }
+    }
+}
