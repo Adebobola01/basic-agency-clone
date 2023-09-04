@@ -1,7 +1,8 @@
 .hero{
-    width: 100;
+    width: 100%;
     position: relative;
     cursor: none;
+    overflow: hidden;
     video{
         width: 100%;
         object-fit: contain;
