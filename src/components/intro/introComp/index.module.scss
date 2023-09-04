@@ -37,8 +37,20 @@
 
 @media only screen and (max-width: 1023px) {
  .introComp{
+    width: calc((100% - 4rem)/3);
     p{
         font-size: 10px;
     }
  }   
 }
+
+@media only screen and (max-width: 870px) {
+    .introComp{
+       figure{
+        width: 100%;
+       }
+       p{
+        width: 100%;
+       }
+    }   
+   }
