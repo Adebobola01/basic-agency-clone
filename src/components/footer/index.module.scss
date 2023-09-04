@@ -1,8 +1,8 @@
 .footer{
     background-color: #252422;
     
+    padding: 7.5rem var(--padding-sides) 0;
     &_content{
-        padding: 7.5rem var(--padding-sides) 0;
         
     }
 
@@ -42,6 +42,7 @@
 
         a{
             color: var(--color-primary);
+            display: block;
         }
 
         &:not(:first-of-type){
@@ -108,6 +109,40 @@
         text-transform: uppercase;
         
         span{
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer{
+        padding: 3.75rem var(--padding-sides);
+        &_row{
+            flex-direction: column;
+
+            p{
+                width: auto;
+                margin: 3rem 0 0;
+                font-size: 22px;
+
+                a{
+                    display: inline;
+                }
+            }
+
+            &:not(:first-of-type){
+                margin: 5rem 0 0;
+            }
+        }
+        &_links{
+            flex-direction: column;
+        }
+
+        &_col{
+            form{
+                input{
+                    width: 100%;
+                }
+            }
         }
     }
 }
