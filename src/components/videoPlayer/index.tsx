@@ -10,7 +10,7 @@ type videoType = {
 }
 
 const VideoPlayer = (props: videoType)=>{
-    const vidRef = useRef();
+    const vidRef = useRef<HTMLVideoElement>(null);
 
     if(!props.show){
         vidRef.current?.pause();
