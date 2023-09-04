@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import styles from "./index.module.scss";
 import Underline from "../underline";
 import EngagamentItem from "./engagementItem";

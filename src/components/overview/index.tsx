@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import styles from "./index.module.scss";
 import { TransparentBtn } from "../buttons";
 import Underline from "../underline";
@@ -18,7 +18,7 @@ const Overview = ()=>{
                     </svg>
                 </figure>
             </div>
-            <TransparentBtn text="SEE THE WORK" />
+            <TransparentBtn color="black" text="SEE THE WORK" />
         </section>
     )
 }

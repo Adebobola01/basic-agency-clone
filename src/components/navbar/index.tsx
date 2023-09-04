@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import styles from "./navbar.module.scss";
 import Logo from "../logo";
 import NavigationItems from "../navigationItems";
