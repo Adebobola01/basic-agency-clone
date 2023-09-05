@@ -3,10 +3,13 @@
     position: relative;
     cursor: none;
     overflow: hidden;
-    video{
-        width: 100%;
-        object-fit: contain;
-    }
+    height: 100vh;
+    // min-height: 671px;
+    // max-height: 100vw;
+    // video{
+    //     width: 100%;
+    //     object-fit: contain;
+    // }
 }
 
 .cover{

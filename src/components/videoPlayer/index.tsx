@@ -24,7 +24,7 @@ const VideoPlayer = (props: videoType)=>{
     }
 
     return (
-        <video autoPlay controls={false} playsInline muted={props.mute}  loop={props.loop} ref={vidRef} className={styles.videoPlayer} style={style} >
+        <video autoPlay controls={false} playsInline muted={props.mute}  loop={props.loop} ref={vidRef} className={styles.videoPlayer} preload="metadata" style={style} >
             <source src={props.video} type="video/mp4" />
         </video>
     )

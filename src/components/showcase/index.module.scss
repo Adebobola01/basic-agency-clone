@@ -3,4 +3,17 @@
     gap: 1rem;
     padding: 0 var(--padding-sides);
     margin-bottom: 9rem;
+    width: auto;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .showcase{
+        width: 150vw;
+
+    }
 }
