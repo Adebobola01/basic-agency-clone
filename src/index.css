@@ -1,12 +1,11 @@
 :root{
-    --bg-color-sec: #252422;
+    --bg-color: #252422;
     --font-fam: 'SctoGroteskA', sans-serif;
     --color-black: #000;
     --color-white: #fff;
     --padding-sides: 5.4vw;
     --color-primary: #f4f4f4;
-    --text-color-primary: rgb(37, 36, 34);
-    --text-color-secondary: #f9CDCD;
+    --text-color: rgb(37, 36, 34);
 }
 
 html,*{
@@ -23,5 +22,12 @@ body{
 @media sreen and (min-width: 1279px) {
     :root{
         --padding-sides: 4.5rem;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg-color: #252422;
+        --text-color: #f9CDCD;
     }
 }

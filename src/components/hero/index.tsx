@@ -5,6 +5,8 @@ import heroGif from "../../assets/images/c6fb986a862cbe643c40cbdd0318ebc495efb18
 import styles from "./index.module.scss";
 import VideoPlayer from "../videoPlayer";
 
+const CUS_CURSOR_SIZE = 56;
+
 
 
 type cursorPtType = {
@@ -28,8 +30,8 @@ const Hero = ()=>{
     }
 
     const moveMouse = ({clientX, clientY}: cursorPtType)=>{
-        setCursorX(clientX);
-        setCursorY(clientY);
+        setCursorX(clientX - CUS_CURSOR_SIZE );
+        setCursorY(clientY - CUS_CURSOR_SIZE );
     }
 
     const cursorStyleHandler = ({clientX, clientY}: cursorPtType)=>{

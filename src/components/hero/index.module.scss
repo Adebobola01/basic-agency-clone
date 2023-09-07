@@ -1,7 +1,7 @@
 .hero{
     width: 100%;
     position: relative;
-    cursor: none;
+    // cursor: none;
     overflow: hidden;
     height: 100vh;
     // min-height: 671px;
@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform .08s ;
+    transition: transform .001s ;
     &_top{
         display: flex;
         align-items: center;
