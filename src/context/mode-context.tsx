@@ -1,24 +1,29 @@
-import React, {createContext, useState} from "react";
+import {createContext, useState} from "react";
 
 type modeType = {
-    mode: "dark" | "light"
+    mode: "dark" | "light" | "" ,
+    changeMode: null | CallableFunction
 }
 
 
-export const modeContext = createContext<modeType>({
-    mode: "light"
+export const ModeContext = createContext<modeType>({
+    mode: "",
+    changeMode: null
 })
 
 const ModeContextProvider = (props: any)=>{
     const [mode, setMode] = useState(false);
 
-    const changeMode = ()=>{
-        setMode(!mode);
+    const changeMode = (val: boolean)=>{
+        console.log(val)
+        setMode(val);
     }
 
     return(
-        <modeContext.Provider>
+        <ModeContext.Provider value={{mode: mode ? "dark" : "light", changeMode: changeMode}} >
             {props.children}
-        </modeContext.Provider>
+        </ModeContext.Provider>
     )
 }
+
+export default ModeContextProvider;

@@ -36,7 +36,6 @@ const Featured = ()=>{
 
     useEffect(()=>{
         cursorStyleHandler({clientX, clientY});
-        console.log(clientX, clientY)
     }, [clientX, clientY]);
 
     return(
