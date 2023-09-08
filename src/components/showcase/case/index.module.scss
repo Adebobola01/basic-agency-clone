@@ -5,9 +5,12 @@
     // align-items: flex-start;
     cursor: pointer;
     // width: 30rem;
-    width: calc((100vw - var(--padding-sides) - var(--padding-sides) - 3rem) / 3);
+    min-width: calc((100vw - var(--padding-sides) - var(--padding-sides) - 3rem) / 3);
     // height: 40rem;
     // gap: 1rem;
+    // margin-right: 5rem;
+    
+
 
     div{
         margin: 0;
@@ -87,10 +90,10 @@
 
 @media only screen and (max-width: 1279px) {
     .case{
-        width: 44vw;
+        width: 43.5vw;
 
         figure, div{
-            height: 60vw;
+            height: 55vw;
         }
 
         &_details{

@@ -12,15 +12,19 @@ export const ModeContext = createContext<modeType>({
 })
 
 const ModeContextProvider = (props: any)=>{
-    const [mode, setMode] = useState(false);
+    const [isDark, setIsDark] = useState(false);
 
     const changeMode = (val: boolean)=>{
         console.log(val)
-        setMode(val);
+        setIsDark(val);
+    }
+
+    if(isDark){document.querySelector("body")?.classList.add("dark");}else{
+        document.querySelector("body")?.classList.remove("dark");
     }
 
     return(
-        <ModeContext.Provider value={{mode: mode ? "dark" : "light", changeMode: changeMode}} >
+        <ModeContext.Provider value={{mode: isDark ? "dark" : "light", changeMode: changeMode}} >
             {props.children}
         </ModeContext.Provider>
     )

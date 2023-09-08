@@ -6,6 +6,8 @@
     --padding-sides: 5.4vw;
     --color-primary: #f4f4f4;
     --text-color-secondary: #f9CDCD;
+    --bg-color-dark: #252422;
+    --text-color-dark: #f9CDCD;
     --text-color: rgb(37, 36, 34);
 }
 
@@ -20,6 +22,12 @@ body{
     /* background-image: url(./assets/images/noise.png); */
 }
 
+body.dark{
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    /* overflow-x: hidden; */
+}
+
 @media sreen and (min-width: 1279px) {
     :root{
         --padding-sides: 4.5rem;
@@ -28,7 +36,5 @@ body{
 
 @media (prefers-color-scheme: dark){
     :root{
-        --bg-color: #252422;
-        --text-color: #f9CDCD;
     }
 }
