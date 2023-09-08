@@ -11,7 +11,7 @@ const News = ()=> {
         <section className={styles.News} >
             <div className={styles.News_header} >
                 <h2>featured  <br/> news</h2>
-                <TransparentBtn text="view all" color="black" />
+                <TransparentBtn text="view all" />
             </div>  
             <div className={styles.News_body}>
                 <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />

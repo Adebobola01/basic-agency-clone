@@ -9,6 +9,7 @@
     --bg-color-dark: #252422;
     --text-color-dark: #f9CDCD;
     --text-color: rgb(37, 36, 34);
+    --scrollbar-bg-color: #9c9b9b;
 }
 
 html,*{
@@ -24,7 +25,9 @@ body{
 
 body.dark{
     background-color: var(--bg-color-dark);
-    color: var(--text-color-dark);
+    --text-color: #f9CDCD;
+    --scrollbar-bg-color: var(--text-color);
+    color: var(--text-color);
     /* overflow-x: hidden; */
 }
 
@@ -34,7 +37,3 @@ body.dark{
     }
 }
 
-@media (prefers-color-scheme: dark){
-    :root{
-    }
-}

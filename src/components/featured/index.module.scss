@@ -47,7 +47,7 @@
             margin: 0rem var(--padding-sides);
         }
         &::-webkit-scrollbar-thumb{
-            background-color: #000;
+            background-color: var(--scrollbar-bg-color);
         }
         &::-webkit-scrollbar{
             height: .15rem;
@@ -69,4 +69,5 @@
     text-transform: uppercase;
     font-weight: 600;
     transition: all .2s;
+    color: black !important;
 }
