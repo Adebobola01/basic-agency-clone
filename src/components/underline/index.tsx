@@ -6,7 +6,7 @@ const Underline = ({customStyles}: any)=>{
         height: ".08rem",
         // width: "100%",
         backgroundColor: "#000",
-        margin: "0",
+        margin: "0 var(--padding-sides)",
     }
 
     const stylesT = {...styles, ...customStyles}

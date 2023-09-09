@@ -43,7 +43,7 @@ const Featured = ()=>{
             <div className={styles.cursor} style={cursorStyle}  >
                 <span>drag</span>
             </div>
-            <Underline customStyles={{margin: "0 5rem"}} />
+            <Underline />
             <div className={styles.featured_num} >
                 <span>00</span>
                 <div>

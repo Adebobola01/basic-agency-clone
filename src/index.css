@@ -1,5 +1,5 @@
 :root{
-    --bg-color: #252422;
+    --bg-color: #fff;
     --font-fam: 'SctoGroteskA', sans-serif;
     --color-black: #000;
     --color-white: #fff;
@@ -10,10 +10,19 @@
     --text-color-dark: #f9CDCD;
     --text-color: rgb(37, 36, 34);
     --scrollbar-bg-color: #9c9b9b;
+    --transpBtn-hover-color: var(--bg-color);
 }
 
 html,*{
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: normal;
+    font-variant-ligatures: normal;
+
+    &::selection{
+        background-color: var(--text-color);
+        color: var(--bg-color);
+    }
 }
 
 body{
@@ -29,6 +38,7 @@ body.dark{
     --text-color: #f9CDCD;
     --scrollbar-bg-color: var(--text-color);
     color: var(--text-color);
+    --bg-color: #252422;
     /* overflow-x: hidden; */
 }
 
