@@ -3,6 +3,7 @@
     display: flex;
     gap: 1rem;
     border-top: 1px solid var(--text-color);
+    cursor: pointer;
 
     &:hover{
         h2{
@@ -36,12 +37,13 @@
 
             h2{
                 font-size: 2.6rem;
+                font-weight: 400;
                 margin: 0;
                 width: 75%;
                 text-transform: uppercase;
                 
                 word-spacing: -6px;
-                line-height: 1.1;
+                line-height: 1;
             }
 
             svg{

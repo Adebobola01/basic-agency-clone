@@ -21,6 +21,7 @@ body{
     font-family: 'SctoGroteskA', sans-serif;
     overflow-x: hidden;
     /* background-image: url(./assets/images/noise.png); */
+    transition: all 1s;
 }
 
 body.dark{

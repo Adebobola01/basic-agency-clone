@@ -8,7 +8,7 @@
     // overflow-y: scroll;
 
     &_texts{
-        color: #f9CDCD;
+        color: var(--text-color);
         width: 50%;
 
         h2{
@@ -23,7 +23,7 @@
         }
 
         p{
-            color: #f9CDCD;
+            color: var(--text-color);
             width: auto;
             display: inline-block;
             margin: 1.8rem 0 5rem;

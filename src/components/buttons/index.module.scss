@@ -21,7 +21,27 @@
     border-radius: 3rem;
     font-size: .7rem;
     font-weight: 600;
+    display: flex;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+
+    // -webkit-background-clip: ;
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: var(--text-color);
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 5 !important;
+    }
+
+    &:hover{
+    }
 }
 
 @media (max-width: 1279px) {

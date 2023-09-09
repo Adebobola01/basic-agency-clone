@@ -30,7 +30,7 @@
         &::before{
             width: 1.5rem;
             height: 2px;
-            background-color: black;
+            background-color: var(--text-color);
             content: "";
             margin-bottom: 2rem;
             position: absolute;

@@ -15,6 +15,11 @@ const Spotlight = ()=>{
     const modeContext = useContext(ModeContext);
     const [isVisible, setVisible] =useState<boolean>(false);
 
+    const obsOptions = {
+        root: null,
+        threshold: .6,
+    }
+
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach((e: eType) => {
@@ -22,7 +27,7 @@ const Spotlight = ()=>{
                     return modeContext.changeMode(e.isIntersecting);
                 }
             })
-        });
+        }, obsOptions);
         observer.observe(domRef.current);
         return () => {if(domRef){ return observer.unobserve(domRef.current)}}
     }, [])
@@ -36,7 +41,7 @@ const Spotlight = ()=>{
                     <span> AGENCY SPOTLIGHT</span>
                 </p>
                 <br/>
-                <TransparentBtn text="ABOUT US" color="#f9CDCD" />
+                <TransparentBtn text="ABOUT US"/>
             </div>
             <figure className={styles.spotlight_video} > 
                 <VideoPlayer video={spotVid} mute={true} show={true} loop={true} />

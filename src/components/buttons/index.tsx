@@ -20,7 +20,7 @@ const TransparentBtn = (props: {text: string, color?: string})=>{
         border: `1px solid ${props.color}`
     } : undefined;
     return(
-        <button className={styles.transpBtn}  style={style} >{props.text}</button>
+        <button className={styles.transpBtn} style={style} >{props.text}</button>
     )
 }
 

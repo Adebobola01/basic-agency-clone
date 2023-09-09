@@ -14,13 +14,13 @@ const News = ()=> {
                 <TransparentBtn text="view all" />
             </div>  
             <div className={styles.News_body}>
+                <NewsItem text="the roadmap for auto brands" date="6.16.23" image={img} />
                 <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
-                <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
-                <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
-                <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
-                <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
-                <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
-                <NewsItem text="breaking through the branding blahs" date="6.16.23" image={img} />
+                <NewsItem text='ryan parkhurst moderates talk on "the art and science of brand purpose and creativity"' date="6.16.23" image={img} />
+                <NewsItem text="john waters, bare walls, and sparking creativity" date="6.16.23" image={img} />
+                <NewsItem text="BASIC/DEPT® is the 27th Webby Awards: Agency of the Year" date="6.16.23" image={img} />
+                <NewsItem text="BASIC/DEPT® secures 19 Nominations for the 27th Annual Webby Awards" date="6.16.23" image={img} />
+                <NewsItem text="Women’s History Month Spotlight at B/D®" date="6.16.23" image={img} />
 
             </div>
         </section>
