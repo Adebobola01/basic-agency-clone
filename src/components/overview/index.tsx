@@ -18,7 +18,7 @@ const Overview = ()=>{
                     </svg>
                 </figure>
             </div>
-            <TransparentBtn color="black" text="SEE THE WORK" />
+            <TransparentBtn text="SEE THE WORK" />
         </section>
     )
 }

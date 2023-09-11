@@ -26,7 +26,7 @@
     position: relative;
     overflow: hidden;
     z-index: 20;
-    transition: all .8s;
+    // transition: all .2s;
     // background-clip: text;
 
     // -webkit-background-clip: ;
@@ -34,7 +34,7 @@
     &::before{
         content: "";
         // color: #000;
-        transition: all 1s;
+        transition: all .6s;
         position: absolute;
         background-color: var(--text-color);
         left: 0;
