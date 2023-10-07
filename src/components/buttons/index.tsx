@@ -14,13 +14,13 @@ const ToggleBtn = ()=>{
     )
 }
 
-const TransparentBtn = (props: {text: string, color?: string})=>{
+const TransparentBtn = (props: {text: string, color?: string, clicked?: any})=>{
     const style = props.color ? {
         color: props.color,
         border: `1px solid ${props.color}`
     } : undefined;
     return(
-        <button className={styles.transpBtn} style={style} >{props.text}</button>
+        <button className={styles.transpBtn} style={style} onClick={props.clicked} >{props.text}</button>
     )
 }
 

@@ -1,9 +1,11 @@
 import {useRef} from "react";
 import styles from "./index.module.scss";
 
+/* */
+
 type videoType = {
     mute: boolean,
-    video: any,
+    video: HTMLVideoElement | string,
     loop?: boolean,
     show?: boolean,
     pause?: boolean,

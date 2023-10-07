@@ -5,6 +5,7 @@ import Underline from "../underline";
 
 const Overview = ()=>{
 
+
     return(
         <section className={styles.overview}  >
             <Underline/>
@@ -18,7 +19,9 @@ const Overview = ()=>{
                     </svg>
                 </figure>
             </div>
-            <TransparentBtn text="SEE THE WORK" />
+            <a href="http://localhost:5000/auth/google" >
+                <TransparentBtn text="SEE THE WORK"  />
+            </a>
         </section>
     )
 }
