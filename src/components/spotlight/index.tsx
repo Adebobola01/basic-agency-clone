@@ -1,10 +1,11 @@
-import {useContext, useState, useRef, useEffect} from "react";
+import {useContext, useRef, useEffect} from "react";
 import styles from "./index.module.scss";
 import { TransparentBtn } from "../buttons";
 import VideoPlayer from "../videoPlayer";
 import spotVid from "../../assets/images/Culture-Loop_v1.mp4";
 import { ModeContext } from "../../context/mode-context";
 // import {useMediaQuery} from "react-responsive";
+
 
 type eType = {
     isIntersecting: boolean
@@ -13,7 +14,7 @@ type eType = {
 const Spotlight = ()=>{
     const domRef = useRef<HTMLElement>(null);
     const modeContext = useContext(ModeContext);
-    const [isVisible, setVisible] =useState<boolean>(false);
+    // const [isVisible, setVisible] = useState<boolean>(false);
 
     const obsOptions = {
         root: null,
@@ -24,12 +25,13 @@ const Spotlight = ()=>{
         const observer = new IntersectionObserver(entries => {
             entries.forEach((e: eType) => {
                 if(modeContext.changeMode ){
-                    return modeContext.changeMode(e.isIntersecting);
+                    const {changeMode} = modeContext;
+                    return changeMode(e.isIntersecting) as CallableFunction;
                 }
             })
         }, obsOptions);
-        observer.observe(domRef.current);
-        return () => {if(domRef){ return observer.unobserve(domRef.current)}}
+        observer.observe(domRef.current as Element);
+        return () => {if(domRef){ return observer.unobserve(domRef.current as Element)}}
     }, [])
 
 
